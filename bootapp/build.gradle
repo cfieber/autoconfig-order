@@ -1,0 +1,12 @@
+dependencies {
+  implementation "org.springframework.boot:spring-boot-starter-web"
+  implementation project(":badlib")
+  runtimeOnly project(":autoconfigs")
+  runtimeOnly "org.springframework.boot:spring-boot-starter-logging"
+
+  testImplementation "org.springframework.boot:spring-boot-starter-test"
+}
+
+test {
+  useJUnitPlatform()
+}
